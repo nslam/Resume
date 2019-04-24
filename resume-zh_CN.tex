@@ -1,0 +1,119 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{石力铭}
+
+\basicInfo{
+  \email{nslamgg@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 180-6737-5826} \textperiodcentered\ 
+  \linkedin[liam]{https://www.linkedin.com/in/liam-07a2c/}}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{浙江大学}, 杭州}{2015 -- 至今}
+\textit{在读学士}\ 软件工程, 预计 2019 年 6 月毕业
+
+\section{\faUsers\ 实习经历}
+\datedsubsection{\textbf{阿里云计算有限公司} 杭州}{2018年4月 -- 2018年10月}
+\role{实习}{职位: 基础平台研发工程师}
+ECS云盘热迁移
+\begin{itemize}
+  \item 使用C++实现客户端并发重连方案
+  \item 异地备份、迁移达到用户无感知（IO freeze 200ms以下）
+\end{itemize}
+
+\datedsubsection{\textbf{Dashbase} 杭州}{2018年10月 -- 2019年4月}
+\role{实习}{职位: 软件开发工程师}
+Cloud日志流到Elasticsearch集群
+\begin{itemize}
+  \item 利用Serverless自动化处理云端日志到ES集群中
+  \item 支持从对象存储读入，导出到kafka等设置
+\end{itemize}
+
+\section{\faGithubAlt\ 个人项目}
+\datedsubsection{\textbf{Biolab 生化实验室网站开发}}{2017年4月 -- 2017-8月}
+\role{Nginx, Python, Django, Database}{独立后端开发}
+\begin{onehalfspacing}
+为生化实验室设计开发教学平台
+\begin{itemize}
+  \item RESTFUL设计
+  \item 提供论文、试剂、仪器的资料存储以及检索
+  \item 支持群发通知、课程论坛等教学辅助功能
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{“中控杯”机器人设计与实现}}{2017年2月 -- 2017年5月}
+\role{Arduino, C, OpenCV}{机器人比赛项目}
+\begin{onehalfspacing}
+“中控杯”机器人设计算法
+\begin{itemize}
+  \item 实现机器人自动寻址
+  \item 利用OpenCV中例如SIFT等算法进行目标图像匹配
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{智能消防栓通讯及管理网站}}{2018 年3月2日 -- 2018年3月4日}
+\role{Golang, Python, Django}{独立后端开发}
+\begin{onehalfspacing}
+智能消防栓管理平台
+\begin{itemize}
+  \item 使用Golang来处理高并发的消防栓通讯
+  \item 使用PostGIS来进行消防栓定位以及查询
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{Menuapedia设计开发}}{2018 年3月2日 -- 2018年3月4日}
+\role{Hackathon in Caltech, America}{团队合作}
+\begin{onehalfspacing}
+实现了餐馆AR寻址，外文菜单自动翻译、配图功能, \\
+视频链接：https://www.youtube.com/watch?v=nBD1JrHceIM&t=3s
+\begin{itemize}
+  \item 利用iOS ARkit实现餐馆的AR寻址
+  \item 利用微软的OCR来识别菜单,同时基于Google的TextAnalysis API分析出菜名，在Google上搜索并爬取图片
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{编程语言: }
+  C++ ≈ Python > C ≈ Golang ≈ Java
+  \item \textbf{平台: }
+  Linux
+
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+\datedline{\textit{一等奖}, 浙江省信息学竞赛联赛}{2013 年 11 月}
+\datedline{\textit{二等奖}, 浙江大学ACM校赛}{2016 年 4 月}
+\datedline{\textit{三等奖}, 浙江大学“中控杯”比赛}{2017 年 5 月}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{技术博客: }https://nslam.github.io/
+  \item \textbf{GitHub: }https://github.com/nslam/
+  \item \textbf{语言: }英语 - 熟练(CET-6)
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
